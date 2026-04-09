@@ -1,0 +1,32 @@
+/*
+https: //coolors.co/palette/001524-15616d-ffecd1-ff7d00-78290f 
+
+001524 - dark blue 
+15616d - cyan 
+ffecd1 - tan 
+ff7d00 - orange 
+78290f - dark red
+*/
+
+body, p, div {
+font-family: "Josefin Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: "Boldonse", system-ui;
+}
+
+.boldonse {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
