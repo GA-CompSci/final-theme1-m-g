@@ -8,25 +8,9 @@ ff7d00 - orange
 78290f - dark red
 */
 
-body, p, div {
+body, div, p {
 font-family: "Josefin Sans", sans-serif;
 }
-
-h1, h2, h3, h4, h5, h6 {
- font-family: "Boldonse", system-ui;
-}
-
-.boldonse {
-    font-family: "Boldonse", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-
-.josefin-sans {
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+h1, h2, h3, h4, h5, h6{
+    font-family: "Boldonse", sans-serif;
 }
