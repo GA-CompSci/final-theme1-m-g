@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /**** COLORS *****/
 #services i {
-    color: black !important;
+    color: #4F5D75 !important;
 }
 
 .bg-dark-content h1, .bg-black h1, [class*="bg-dark"] h1, [class*="bg-gradient-"] h1, [class*="bg-color-"] h1, .bg-dark-content h2, .bg-black h2, [class*="bg-dark"] h2, [class*="bg-gradient-"] h2, [class*="bg-color-"] h2, .bg-dark-content h3, .bg-black h3, [class*="bg-dark"] h3, [class*="bg-gradient-"] h3, [class*="bg-color-"] h3, .bg-dark-content h4, .bg-black h4, [class*="bg-dark"] h4, [class*="bg-gradient-"] h4, [class*="bg-color-"] h4, .bg-dark-content h5, .bg-black h5, [class*="bg-dark"] h5, [class*="bg-gradient-"] h5, [class*="bg-color-"] h5, .bg-dark-content h6, .bg-black h6, [class*="bg-dark"] h6, [class*="bg-gradient-"] h6, [class*="bg-color-"] h6 {
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #services p {
-    color: #FFFFFF;
+    color: #4F5D75;
 }
 
 .header[class*='header-color']:not(.transparent-dark) .header-logo a{
@@ -49,5 +49,47 @@ color: #2D3142;
 }
 
 #about p {
+    color: #4F5D75;
+}
+
+#testimonial p {
+    color: #4F5D75;
+}
+
+#services h2, h5 {
+    color: #2D3142;
+}
+
+#about h2 {
+    color: #2D3142;  
+}
+
+#about h6 {
+    color: #4F5D75;
+}
+
+#portfolio h5 {
+color: #2D3142;
+}
+
+#blog h2 {
+    color: #4F5D75;
+}
+
+#blog h4 {
+    color: #4F5D75;
+}
+
+
+
+#contact h2 {
+    color: #4F5D75;
+}
+
+#contact p {
+   color: #BFC0C0;
+}
+
+#contact h6 {
     color: #4F5D75;
 }
