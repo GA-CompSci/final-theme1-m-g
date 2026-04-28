@@ -72,19 +72,11 @@ color: #2D3142;
 color: #2D3142;
 }
 
-#blog h2 {
-    color: #4F5D75;
-}
-
-#blog h4 {
+#blog h2, #blog h4, #contact h2 {
     color: #4F5D75;
 }
 
 
-
-#contact h2 {
-    color: #4F5D75;
-}
 
 #contact p {
    color: #4F5D75;
@@ -92,4 +84,28 @@ color: #2D3142;
 
 #contact h6 {
     color: #4F5D75;
+}
+
+#testimonial p {
+    color: #FFFFFF;
+}
+
+input:not(.form-check-input), textarea, .form-control {
+    color: #2D3142 !important;
+}
+
+button-text-1, .button-text-2, .button-text-3 {
+    color: #2D3142 !important;
+} 
+/***** helper ******/
+.bg-gray {
+    background-color: #BFC0C0 !important;
+}
+
+.bg-blue {
+    background-color:#4F5D75 !important;
+}
+
+a.feedembed-badge {
+    display: none;
 }
