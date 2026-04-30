@@ -45,7 +45,7 @@ color: #2D3142;
 }
 
 #facts h1, #facts h5 {
-    color: #2D3142;
+    color: #FFFFFF;
 }
 
 #about p {
@@ -57,7 +57,7 @@ color: #2D3142;
 }
 
 #services h2, h5 {
-    color: #2D3142;
+    color: #FFFFFF;
 }
 
 #about h2 {
@@ -97,6 +97,18 @@ input:not(.form-check-input), textarea, .form-control {
 button-text-1, .button-text-2, .button-text-3 {
     color: #2D3142 !important;
 } 
+
+.filter.filter-style-3 ul li {
+    color: #FFFFFF;
+}
+
+.filter.filter-style-3 ul li:hover, .filter.filter-style-3 ul li.active, .filter.filter-style-3 ul li.mixitup-control-active {
+    color: #FFFFFF;
+}
+
+.bg-dark-content, .bg-black, [class*="bg-dark"], [class*="bg-gradient-"], [class*="bg-color-"] {
+    color: #FFFFFF;
+}
 /***** helper ******/
 .bg-gray {
     background-color: #BFC0C0 !important;
@@ -106,6 +118,8 @@ button-text-1, .button-text-2, .button-text-3 {
     background-color:#4F5D75 !important;
 }
 
-a.feedembed-badge {
-    display: none;
+/*** SHADY NO CREDIT GIVEN... illegal? ***/
+.tally-powered {
+  display: none;
 }
+
