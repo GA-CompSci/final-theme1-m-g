@@ -69,11 +69,7 @@
 			</div>
 			<!-- Menu Extra -->
 			<div class="header-menu-extra">
-				<ul class="list-inline-sm">
-					<li><a href="#"><i class="bi bi-facebook"></i></a></li>
-					<li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
-					<li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-				</ul>
+			
 			</div>
 			<!-- Menu Toggle -->
 			<button class="header-toggle">
@@ -84,7 +80,7 @@
 	<!-- end Header -->
 
 	<!-- Hero section -->
-	<div id="home" class="section-fullscreen bg-image parallax" data-bg-src="assets/images/car1.jpg">
+	<div id="home" class="section-fullscreen bg-image parallax" data-bg-src="assets/images/car6767.png">
 		<div class="bg-dark-06">
 			<div class="container text-center">
 				<div class="position-middle">
@@ -365,8 +361,8 @@
 						<h1 class="fw-thin display-5 line-height-150 m-0">How We Clean Your Cars</h1>
 					</div>
 					<div class="col-12 col-md-6 text-md-end">
-						<a class="button-circle button-circle-xl button-circle-white-2 button-circle-ripple mt-3 icon-xl lightbox-media-link"
-							href="images/videocar.mp4"><i class="bi bi-play"></i></a>
+						<a class="button-circle button-circle-xl button-circle-white-2 button-circle-ripple mt-3 icon-xl open-video-popup"
+   href="#video-popup"><i class="bi bi-play"></i></a>
 					</div>
 				</div><!-- end row -->
 			</div><!-- end container -->
@@ -552,18 +548,11 @@
 			<div class="container">
 				<div class="row align-items-center g-2 g-lg-3">
 					<div class="col-12 col-md-6 text-center text-md-start">
-						<p>&copy; 2025 FlaTheme, All Rights Reserved.</p>
+			
 					</div>
 					<div class="col-12 col-md-6 text-center text-md-end">
 						<ul class="list-inline-sm">
-							<li><a class="button-circle button-circle-sm button-circle-social-facebook" href="#"><i
-										class="bi bi-facebook"></i></a></li>
-							<li><a class="button-circle button-circle-sm button-circle-social-twitter" href="#"><i
-										class="bi bi-twitter-x"></i></a></li>
-							<li><a class="button-circle button-circle-sm button-circle-social-pinterest" href="#"><i
-										class="bi bi-pinterest"></i></a></li>
-							<li><a class="button-circle button-circle-sm button-circle-social-instagram" href="#"><i
-										class="bi bi-instagram"></i></a></li>
+							
 						</ul>
 					</div>
 				</div><!-- end row -->
@@ -579,12 +568,112 @@
 
 	<!-- ***** JAVASCRIPTS ***** -->
 	<script src="assets/plugins/jquery.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 	<script src="assets/plugins/plugins.js"></script>
 	<script src="assets/js/functions.js"></script>
 	<script>
+		{
 		(() => { const d = document, s = d.createElement("script"); s.type = "module"; s.src = "https://wgt.pane.so/widget.js"; d.head.append(s) })()
+		}
 	</script>
+	<script>
+  $(function() {
+    $('.open-video-popup').magnificPopup({
+      type: 'inline',
+      callbacks: {
+        close: function() {
+          $('#video-popup video')[0].pause();
+        }
+      }
+    });
+  });
+</script>
+
+
+	<div id="video-popup" class="mfp-hide" style="max-width:800px; margin:20px auto;">
+  <video width="50%" controls>
+    <source src="assets/images/videocar.mp4" type="video/mp4">
+  </video>
+</div>
+
 </body>
 
 </html>
+<!-- ============================================ -->
+<!--                    Team                      -->
+<!-- ============================================ -->
+
+<section id="meet-team-2071">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Team</span>
+            <h2 class="cs-title">Meet Our Team</h2>
+            <p class="cs-text">
+                Orci eu lobortis elementum nibh tellus. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Luctus accumsan tortor posuere ac ut consequat semper. Et pharetra pharetra massa massa ultricies mi quis.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-name">Dr. Ronald Richards</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Cameron Williamson</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Brooklyn Simmons</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Savannah Nguyen</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Albert Flores</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Eleanor Pena</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Dianne Russell</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Darlene Robertson</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg" alt="dentist staff" width="1024" height="894">
+    </picture>
+</section>
+                                
