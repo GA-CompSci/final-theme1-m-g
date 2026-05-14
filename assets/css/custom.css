@@ -1,125 +1,140 @@
-/*
-https://coolors.co/palette/2d3142-bfc0c0-ffffff-ef8354-4f5d75 
-
-2D3142 - dark blue
-BFC0C0 - gray
-FFFFFF - white
-EF8354 - orange
-4F5D75 - lighter blue
+/* THE DETAIL DUDE - REFINED MIDNIGHT SLATE 
+   Deep Slate:  #1A1E29
+   Steel Blue:  #2D3548
+   Ignition:    #FF6B35
 */
 
-body, div, p {
+:root {
+    --slate-dark: #1A1E29;
+    --slate-light: #2D3548;
+    --orange: #FF6B35;
+    --text-bright: #F4F4F9;
+    --text-dim: #A0A5B1;
+    --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Base Styling */
+body {
+    background-color: var(--slate-dark);
+    color: var(--text-dim);
     font-family: "Josefin Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-transform: none !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Boldonse", sans-serif !important;
+    color: var(--text-bright);
+    text-transform: none !important;
+    letter-spacing: 0.5px;
+    font-weight: 700;
 }
 
-/**** COLORS *****/
-#services i {
-    color: #4F5D75 !important;
+/* Unified Icons */
+i, .bi, .fas, .fa {
+    color: var(--orange) !important;
 }
 
-.bg-dark-content h1, .bg-black h1, [class*="bg-dark"] h1, [class*="bg-gradient-"] h1, [class*="bg-color-"] h1, .bg-dark-content h2, .bg-black h2, [class*="bg-dark"] h2, [class*="bg-gradient-"] h2, [class*="bg-color-"] h2, .bg-dark-content h3, .bg-black h3, [class*="bg-dark"] h3, [class*="bg-gradient-"] h3, [class*="bg-color-"] h3, .bg-dark-content h4, .bg-black h4, [class*="bg-dark"] h4, [class*="bg-gradient-"] h4, [class*="bg-color-"] h4, .bg-dark-content h5, .bg-black h5, [class*="bg-dark"] h5, [class*="bg-gradient-"] h5, [class*="bg-color-"] h5, .bg-dark-content h6, .bg-black h6, [class*="bg-dark"] h6, [class*="bg-gradient-"] h6, [class*="bg-color-"] h6 {
-    color: #FFFFFF;
+/* Navigation */
+.header.sticky {
+    background: rgba(26, 30, 41, 0.98) !important;
+    border-bottom: 3px solid var(--orange);
 }
 
-#services p {
-    color: #4F5D75;
+.nav-link {
+    font-weight: 600;
+    color: var(--text-bright) !important;
+    text-transform: none !important;
 }
 
-.header[class*='header-color']:not(.transparent-dark) .header-logo a{
-     color: #FFFFFF;
+.text-orange {
+    color: var(--orange) !important;
 }
 
-.bg-dark-content, .bg-black, [class*="bg-dark"], [class*="bg-gradient-"], [class*="bg-color-"]{
-color: #2D3142;
+/* Sections */
+.section { padding: 100px 0; }
+.bg-gray { background-color: var(--slate-light) !important; }
+.bg-blue { background-color: var(--slate-dark) !important; }
+
+/* Service Cards */
+.service-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 12px;
+    transition: var(--transition);
 }
 
-
-
-
-.header[class*="header-color"]:not(.transparent-dark) .header-menu .nav .nav-item .nav-link, .header[class*="header-color"]:not(.transparent-dark) .header-menu .nav .nav-item .nav-dropdown-toggle {
-  color:  #FFFFFF;
+.service-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: var(--orange);
+    transform: translateY(-10px);
 }
 
-#facts h1, #facts h5 {
-    color: #FFFFFF;
+/* --- Portfolio Hover Effects --- */
+.portfolio-box {
+    border: 2px solid transparent; 
+    transition: var(--transition);
+    overflow: hidden; 
+    position: relative;
+    border-radius: 12px;
 }
 
-#about p {
-    color: #4F5D75;
+.portfolio-box:hover {
+    border-color: var(--orange);
+    box-shadow: 0 0 25px rgba(255, 107, 53, 0.4);
 }
 
-#testimonial p {
-    color: #4F5D75;
+.portfolio-box img {
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-#services h2, h5 {
-    color: #FFFFFF;
+.portfolio-box:hover img {
+    transform: scale(1.08); 
 }
 
-#about h2 {
-    color: #2D3142;  
+.portfolio-title {
+    z-index: 2;
+    transition: var(--transition);
+    background: linear-gradient(to top, rgba(26, 30, 41, 0.9), transparent) !important;
 }
 
-#about h6 {
-    color: #4F5D75;
+.portfolio-box:hover .portfolio-title h4, 
+.portfolio-box:hover .portfolio-title h5 {
+    color: var(--orange) !important;
 }
 
-#portfolio h5 {
-color: #2D3142;
+/* Buttons */
+.btn-orange {
+    background: var(--orange);
+    color: #FFFFFF !important;
+    padding: 16px 35px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: var(--transition);
+    display: inline-block;
+    text-decoration: none;
 }
 
-#blog h2, #blog h4, #contact h2 {
-    color: #4F5D75;
+.btn-orange:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 107, 53, 0.4);
 }
 
-
-
-#contact p {
-   color: #4F5D75;
+/* Progress Bars */
+.animated-progress {
+    background: rgba(255, 255, 255, 0.1);
+    height: 10px;
+    border-radius: 20px;
 }
 
-#contact h6 {
-    color: #4F5D75;
+.animated-progress div {
+    background: var(--orange) !important;
 }
 
-#testimonial p {
-    color: #FFFFFF;
+/* Footer */
+footer {
+    background: #12151D !important;
+    border-top: 1px solid var(--slate-light);
+    padding: 60px 0;
 }
-
-input:not(.form-check-input), textarea, .form-control {
-    color: #2D3142 !important;
-}
-
-button-text-1, .button-text-2, .button-text-3 {
-    color: #2D3142 !important;
-} 
-
-.filter.filter-style-3 ul li {
-    color: #FFFFFF;
-}
-
-.filter.filter-style-3 ul li:hover, .filter.filter-style-3 ul li.active, .filter.filter-style-3 ul li.mixitup-control-active {
-    color: #FFFFFF;
-}
-
-.bg-dark-content, .bg-black, [class*="bg-dark"], [class*="bg-gradient-"], [class*="bg-color-"] {
-    color: #FFFFFF;
-}
-/***** helper ******/
-.bg-gray {
-    background-color: #BFC0C0 !important;
-}
-
-.bg-blue {
-    background-color:#4F5D75 !important;
-}
-
-/*** SHADY NO CREDIT GIVEN... illegal? ***/
-.tally-powered {
-  display: none;
-}
-
